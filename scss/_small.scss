@@ -14,49 +14,60 @@ body {
 // }
 .line {
     height: 10px;
-    background-color: $primaryColor;
+    background-color: $secondaryColor;
   }
-header {
-  
+.headerWrapper {
+  background-color: $primaryColor;
+  header {
   padding: 2%;
-  
-  
   h1.companyName {
-  text-shadow: 1px 1px 3px white;
+  text-shadow: 1px 1px 3px black;
   margin: 0;
-  color: black;
+  color: white;
   font-weight: $heavyWeight;
   font-size: 3rem;
   display: block;
   }
   h1.companySlogan {
-  text-shadow: 1px 1px 3px white;
+  text-shadow: 1px 1px 3px black;
   margin: 0;
-  color: black;
+  color: white;
   font-weight: $regularWeight;
   font-size: 2rem;
   }
 }
+}
+
 
 
 // MAIN RULES
 
 
 .navWrapper {
-  background-color: $primaryColor;
+  background-color: $secondaryColor;
+}
+
+.hide {
+  display: none;
+}
+
+button{
+  height: 50px;
+  width: 50px;
 }
 
 nav {
-  
   margin: 0;
   padding: 0;
+  
   ul {
     margin: 0;
     padding: 0;
+    
   }
   li {
     list-style-type: none;
-    width: 25%;
+    width: 100%;
     display: block;
     float: left;
   }
@@ -76,6 +87,12 @@ nav {
 }
 
 
+div.flexed {display: flex; flex-wrap: wrap;}
+
+@for $i from 1 through 12 {
+        $w:($i / 12) * 100%;
+        .small-#{$i} {flex-basis: $w;}	
+} // end loop
 
 
 
