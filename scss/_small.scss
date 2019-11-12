@@ -12,15 +12,15 @@ body {
 // HEADER RULES
 // div.headerWrapper {
 // }
-
+.line {
+    height: 10px;
+    background-color: $primaryColor;
+  }
 header {
   
   padding: 2%;
   
-  figure.logo {
-    float: left;
-    margin: 0 2% 0 0;
-  }
+  
   h1.companyName {
   text-shadow: 1px 1px 3px white;
   margin: 0;
@@ -75,13 +75,7 @@ nav {
   }
 }
 
-picture.hero {
-  display: block;
-  width: 100%;
-  img {
-    width: 100%;
-  }
-}
+
 
 
 
@@ -105,15 +99,7 @@ h2 {
   padding: 0 2%;
 }
 
-.founder {
-  padding: 0 2%;
-  display: block;
-  float: right;
-  width: 50%;
-  img {
-    width: 100%;
-  }
-}
+
 
 p {
   font-weight: $regularWeight;
