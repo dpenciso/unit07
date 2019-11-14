@@ -51,7 +51,7 @@ body {
   display: none;
 }
 
-button{
+button {
   height: 50px;
   width: 50px;
 }
@@ -112,42 +112,67 @@ h1.welcome {
 }
 
  
-h2 {
+h2{
+  text-align: center;
+.name {
   padding: 0;
   margin: 10% 0;
-  text-align: center;
+
+}
 }
 
 .flexed {
-  justify-content: space-evenly;
-  margin: 5% 0% 0 0%;
+  display: flex;
 }
 
-.small-5 {
+.attourney {
+  
+  padding: 1rem 2%;
+}
+
+h2.case {
   border-style: solid rgb(255, 255, 255);
   border-width: 1.5px;
   box-shadow: 2px 2px 10px rgb(0, 0, 0);
-  padding: 0;
-  margin: 0 0 5% 0;
-}
-
-.small-8 {
-  border-style: solid rgb(255, 255, 255);
-  border-width: 1.5px;
-  box-shadow: 2px 2px 10px rgb(0, 0, 0);
-  padding: 0;
-  margin: 0 0 5% 0;
+  padding: 5%;
+  margin: .5rem 2%;
   background-color: $primaryColor;
   color: white;
   text-shadow: 1px 1px 3px black;
 }
 
-.small-10 {
+h2.case:hover {
+  background-color: $secondaryColor;;
+}
+
+.blogText {
   border-style: solid rgb(255, 255, 255);
   border-width: 1.5px;
   box-shadow: 2px 2px 10px rgb(0, 0, 0);
   padding: 0;
-  margin: 0 0 5% 0;
+  margin: 5% 2% 0 2%;
+  background-color: $secondaryColor;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+.tip {
+  border-style: solid rgb(255, 255, 255);
+  border-width: 1.5px;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  padding: 0;
+  margin: 5% 2% 0 2%;
+  background-color: $secondaryColor;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+.tipDay {
+  border-style: solid rgb(255, 255, 255);
+  border-width: 1.5px;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  padding: 0;
+  margin: 5% 2% 0 2%;
   background-color: $secondaryColor;
   color: white;
   text-shadow: 1px 1px 3px black;
@@ -191,12 +216,24 @@ figure {
 
 p {
   font-weight: $regularWeight;
-  padding: 0;
+  padding: 2%;
   margin: 0;
   width: 100%;
 }
 
+.icon {
+  text-align: center;
+}
 
+.icon i {
+  font-size: 50px;
+  color: $primaryColor;
+  padding: 2%;
+}
+
+.icon i:hover {
+  color: $secondaryColor;
+}
 
 footer {
   text-align: center;
